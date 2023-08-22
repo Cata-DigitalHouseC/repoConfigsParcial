@@ -4,8 +4,6 @@ spring:
   application:
     name: gateway
   cloud:
-    config:
-      enabled: true
     gateway:
       discovery:
         locator:
