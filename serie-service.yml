@@ -15,18 +15,9 @@ spring:
     passowrd: guest
     host: localhost
     port: 5672
-management:
-  tracing:
-    sampling:
-        probability: 1.0
-logging:
-  logging:
-    pattern:
-      level: "%5p [${spring.application.name},%X{X-B3-TraceId:-},%X{X-B3-SpanId:-},%X{X-Span-Export:-}] [%t] --- %c{1}.%M() : %m%n"
-  level:
-    org:
-      springframework:
-        web: DEBUG
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
 
 queue:
   serie:
