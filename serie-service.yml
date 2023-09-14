@@ -9,7 +9,7 @@ spring:
   data:
     mongodb:
       hodt: localhost
-      database: test
+      database: serie
       port: 27017
   rabbitmq:
     username: guest

@@ -9,7 +9,7 @@ spring:
   data:
     mongodb:
       host: localhost
-      database: test
+      database: catalog
       port: 27018
   rabbitmq:
     username: guest
