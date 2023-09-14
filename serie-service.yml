@@ -8,8 +8,9 @@ spring:
       version: 4.0.2
   data:
     mongodb:
+      hodt: localhost
       database: test
-      port: 27018
+      port: 27017
   rabbitmq:
     username: guest
     password: guest
@@ -18,6 +19,9 @@ spring:
   zipkin:
     base-url: http://localhost:9411
     enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0
 
 queue:
   serie:
