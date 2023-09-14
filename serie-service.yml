@@ -36,6 +36,10 @@ management:
   endpoint:
     info:
       enabled: true
+logging:
+  level:
+    org.springframework.cloud.sleuth: DEBUG
+    zipkin2: DEBUG
 
 eureka:
   client:
